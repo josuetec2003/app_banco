@@ -18,6 +18,8 @@ $(function () {
 					'monto': monto
 				};
 
+				alert('Tengo duda en esta linea');
+
 				$.get('/app_banco/scripts/cuenta.php', ctx, function (respuesta) {
 					$('#cuenta-msj').fadeIn().text(respuesta.msj);
 
