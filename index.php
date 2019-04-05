@@ -65,9 +65,11 @@
 				<tr>
 					<td><?php echo $id ?></td>
 					<td>
-						<a href="#" class="editar-nombre" id="nombre">
-							<?php echo $nombre ?>								
-						</a>
+						<a href="#" 
+						   class="editar-nombre" 
+						   id="nombre" 
+						   data-pk="<?php echo $id ?>" 
+						   data-url="/app_banco/scripts/xeditable-cliente.php"><?php echo $nombre ?></a>
 					</td>
 					<td><?php echo $apellido ?></td>
 					<td><?php echo $direccion ?></td>
